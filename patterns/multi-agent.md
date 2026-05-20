@@ -13,16 +13,16 @@ This pattern is inspired by organizational design: just as a company has special
                     │  orchestrator)│
                     └──────┬───────┘
                            │
-              ┌────────────┼────────────┐
-              │            │            │
-       ┌──────▼─────┐ ┌───▼──────┐ ┌──▼──────────┐
-       │ RESEARCHER │ │ CODER    │ │ REVIEWER     │
-       │            │ │          │ │              │
-       │ Tools:     │ │ Tools:   │ │ Tools:       │
-       │ - search   │ │ - editor │ │ - linter     │
-       │ - reader   │ │ - runner │ │ - test runner│
-       │ - memory   │ │ - git    │ │ - formatter  │
-       └────────────┘ └──────────┘ └──────────────┘
+               ┌────────────┼────────────┐
+               │            │            │
+        ┌──────▼─────┐ ┌───▼──────┐ ┌──▼──────────┐
+        │ RESEARCHER │ │ CODER    │ │ REVIEWER     │
+        │            │ │          │ │              │
+        │ Tools:     │ │ Tools:   │ │ Tools:       │
+        │ - search   │ │ - editor │ │ - linter     │
+        │ - reader   │ │ - runner │ │ - test runner│
+        │ - memory   │ │ - git    │ │ - formatter  │
+        └────────────┘ └──────────┘ └──────────────┘
 ```
 
 ### Communication topologies
