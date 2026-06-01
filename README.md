@@ -157,7 +157,7 @@
 - [P2PCLAW](https://github.com/Agnuxo1/OpenCLAW-P2P) - Decentralized scientific research network with 14+ autonomous agents featuring P2P mesh, IPFS storage, and Lean 4 formal verification, self-hosted with Docker Compose (🏷️ `Python` `P2P` `Self-Hosted`).
 - [Swarm](https://github.com/openai/swarm) - Lightweight framework for agent handoffs, context variables, and function calling patterns from OpenAI (🏷️ `Python` `OpenAI` `SDK`).
 - [Swarms Framework](https://github.com/kyegomez/swarms) - Multi-agent orchestration for production use cases with scalability and reliability at its core (🏷️ `Python` `Production` `SDK`).
-- [Yao Agents](https://yaoagents.com) - Complete local AI execution platform with 30+ Experts and autonomous Robot orchestration via 5-stage Pipeline (Inspiration→Goals→Tasks→Validation→Delivery). Multi-agent coordination with API-based Robot-to-Robot calling, MCP support, and multi-channel messaging (🏷️ `Go` `TypeScript` `Docker` `MCP` `Self-Hosted` `WeChat` `Feishu`).
+- [Yao Agents](https://yaoagents.com) - Complete local AI execution platform with 30+ Experts, autonomous Robot orchestration via 5-stage Pipeline, API-based Robot-to-Robot calling, MCP support, and multi-channel messaging (🏷️ `Go` `TypeScript` `Docker` `MCP` `Self-Hosted` `WeChat` `Feishu`).
 
 ## Agent Communication Protocols
 
@@ -720,7 +720,7 @@ Tools for running LLMs locally and self-hosting AI agent platforms with full pri
 - [LocalAI](https://github.com/mudler/LocalAI) - Drop-in OpenAI API replacement that runs models locally without requiring a GPU (🏷️ `Go` `Docker` `Local`).
 - [Ollama](https://github.com/ollama/ollama) - Run LLMs locally with a dead-simple CLI interface and 162K+ GitHub stars (🏷️ `Go` `CLI` `Local`).
 - [vLLM](https://github.com/vllm-project/vllm) - High-throughput LLM serving engine with PagedAttention for production-grade local inference (🏷️ `Python` `CUDA` `Local`).
-- [Yao Agents](https://yaoagents.com) - Local-first AI execution platform with 30+ domain Experts and autonomous Robot workers. Docker sandbox, MCP support, BYOK models, 5-stage Pipeline, and multi-platform messaging (WeChat/Feishu/DingTalk/Telegram/Discord). Open-source engine at [YaoApp/yao](https://github.com/YaoApp/yao) (🏷️ `Go` `TypeScript` `Docker` `Desktop` `Self-Hosted`).
+- [Yao Agents](https://github.com/YaoApp/yao) - Local-first AI execution platform with Docker sandbox isolation, BYOK model configuration, MCP support, 5-stage Pipeline, and multi-platform messaging via WeChat, Feishu, DingTalk, Telegram, and Discord (🏷️ `Go` `TypeScript` `Docker` `Desktop` `Self-Hosted`).
 
 ## AI Governance and Compliance
 
