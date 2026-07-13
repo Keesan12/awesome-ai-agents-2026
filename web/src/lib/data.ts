@@ -113,7 +113,7 @@ export function getPopularCategories(limit = 8): { category: string; count: numb
   agents.forEach((a) => {
     if (a.category) map.set(a.category, (map.get(a.category) ?? 0) + 1);
   });
-  return [...map.entries()]
+  return Array.from(map.entries())
     .sort((a, b) => b[1] - a[1])
     .slice(0, limit)
     .map(([category, count]) => ({ category, count }));
