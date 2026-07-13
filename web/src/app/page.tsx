@@ -319,7 +319,7 @@ export default function Home() {
             Get the latest agent releases, benchmark scores, and deployment tutorials delivered directly to your inbox.
           </p>
 
-          <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input 
               type="email" 
               placeholder="Enter your email address" 
