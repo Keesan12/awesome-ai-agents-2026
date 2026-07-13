@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 // Derive unique, sorted license list directly from the agents dataset
 function getLicenses(): string[] {
   const agents = getAllAgents();
-  return [
-    ...new Set(agents.map((a) => a.license).filter(Boolean)),
-  ].sort();
+  return Array.from(
+    new Set(agents.map((a) => a.license).filter(Boolean))
+  ).sort();
 }
 
 export default function ExplorePage() {

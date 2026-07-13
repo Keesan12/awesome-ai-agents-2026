@@ -78,13 +78,13 @@ export default function AgentDetailPage({ params }: { params: { slug: string } }
   const related = getRelatedAgents(params.slug, 4);
 
   // Related categories across registry
-  const relatedCategories = [
-    ...new Set(
+  const relatedCategories = Array.from(
+    new Set(
       allAgents
         .filter((a) => a.tags.some((t) => agent.tags.includes(t)) && a.slug !== agent.slug)
         .map((a) => a.category)
-    ),
-  ].slice(0, 6);
+    )
+  ).slice(0, 6);
 
   // JSON-LD structured data
   const jsonLd = {
