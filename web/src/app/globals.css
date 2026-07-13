@@ -1,38 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --bg-primary: 0 0% 100%;
-    --bg-secondary: 0 0% 98%;
-    --text-primary: 0 0% 9%;
-    --text-secondary: 0 0% 38%; /* WCAG AA contrast ratio of 5.7:1 against FFFFFF */
-    --border-subtle: 0 0% 89%;
-    
-    --accent-teal: 173 80% 40%;
-    --accent-purple: 262 70% 50%;
-    --accent-amber: 35 90% 50%;
-    
-    --radius: 8px;
-  }
-
-  .dark {
-    --bg-primary: 0 0% 3%;
-    --bg-secondary: 0 0% 7%;
-    --text-primary: 0 0% 95%;
-    --text-secondary: 0 0% 68%; /* WCAG AA contrast ratio of 6.2:1 against 0A0A0A */
-    --border-subtle: 0 0% 15%;
-    
-    --accent-teal: 173 80% 48%;
-    --accent-purple: 262 80% 60%;
-    --accent-amber: 35 90% 60%;
-  }
+@theme {
+  --color-border: var(--border-subtle);
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  
+  --color-muted: var(--bg-secondary);
+  --color-muted-foreground: var(--text-secondary);
+  
+  --color-accent-teal: var(--accent-teal);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-amber: var(--accent-amber);
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 }
 
-@layer base {
-  body {
-    @apply bg-background text-foreground antialiased selection:bg-accent-purple/20 selection:text-accent-purple;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  }
+:root {
+  --bg-primary: hsl(0, 0%, 100%);
+  --bg-secondary: hsl(0, 0%, 98%);
+  --text-primary: hsl(0, 0%, 9%);
+  --text-secondary: hsl(0, 0%, 38%);
+  --border-subtle: hsl(0, 0%, 89%);
+  
+  --accent-teal: hsl(173, 80%, 40%);
+  --accent-purple: hsl(262, 80%, 50%);
+  --accent-amber: hsl(35, 90%, 50%);
+  
+  --radius: 8px;
+}
+
+.dark {
+  --bg-primary: hsl(0, 0%, 3%);
+  --bg-secondary: hsl(0, 0%, 7%);
+  --text-primary: hsl(0, 0%, 95%);
+  --text-secondary: hsl(0, 0%, 68%);
+  --border-subtle: hsl(0, 0%, 15%);
+  
+  --accent-teal: hsl(173, 80%, 48%);
+  --accent-purple: hsl(262, 80%, 60%);
+  --accent-amber: hsl(35, 90%, 60%);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: hsla(262, 80%, 60%, 0.2);
+  color: hsl(262, 80%, 60%);
 }
